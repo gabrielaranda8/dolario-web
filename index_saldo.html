@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Divisas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1 id="nombre-empresa">Dolario</h1>
+</header>
+<div class="conversor-container">
+  <!--   <div class="titulo">
+        <h1>Pasar <span id="titulo-moneda-origen">Euros</span> a <span id="titulo-moneda-destino">Dólares</span></h1>
+    </div> -->
+    <div class="conversor">
+<div class="input-group">
+            <span class="etiqueta">Tu envías <span id="moneda-envio-label">EUR</span></span>
+            <input type="number" id="monto" placeholder="Cantidad">
+            <select id="moneda-origen" onchange="actualizarImagenMoneda(this.value, 'imagen-moneda-origen')">
+                <option value="EUR">EUR</option>
+                <option value="USD-USA">USD USA</option>
+                <option value="USDT">USDT</option>
+                <option value="ARS">ARS</option>
+                <option value="USD-PAYPAL">USD PAYPAL</option>
+            </select>
+            <img id="imagen-moneda-origen" src="banco_eur.png" alt="Moneda" style="width:120px; height:auto;">
+        </div>
+        <div class="input-group">
+            <span class="etiqueta">Te enviamos <span id="moneda-recepcion-label">USDT</span></span>
+            <input type="text" id="resultado" placeholder="Cantidad" readonly>
+            <select id="moneda-destino" onchange="actualizarImagenMoneda(this.value, 'imagen-moneda-destino')">
+                <option value="USDT">USDT</option>
+                <option value="USD-USA">USD USA</option>
+                <option value="EUR">EUR</option>
+                <option value="ARS">ARS</option>
+                <option value="USD-PAYPAL">USD PAYPAL</option>
+            </select>
+            <img id="imagen-moneda-destino" src="usdt.png" alt="Moneda" style="width:120px; height:auto;">
+        </div>
+        <button id="convertir" onclick="mostrarFormulario()">Siguiente</button>
+        <div id="formulario-container" style="display:none;"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

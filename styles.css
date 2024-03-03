@@ -1,0 +1,159 @@
+body {
+    font-family: Open Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: MediumPurple; /* O el color de fondo que prefieras */
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#logo-empresa {
+    max-width: 100px; /* Ajusta esto según tus necesidades */
+    height: auto;
+}
+
+#nombre-empresa {
+    font-family: 'Open Sans', sans-serif; /* Usa la fuente Open Sans */
+    font-weight: 700; /* Hace el texto en negrita */
+    color: white; /* Establece el color del texto en blanco */
+    font-size: 84px; /* Ajusta el tamaño del texto según necesites */
+}
+
+.conversor-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.titulo h1 {
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.etiqueta {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.6); /* Negro con menor opacidad */
+}
+
+.input-group input,
+.input-group select {
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.input-group img {
+    height: 40px; /* Ajusta el tamaño según necesites */
+    vertical-align: middle; /* Alinea la imagen verticalmente con el selector */
+    margin-left: 10px; /* Espacio entre el selector y la imagen */
+}
+input[type="number"] {
+    background-color: #f8f8f8; /* Color de fondo más claro */
+    color: black; /* Color del texto */
+    border: 1px solid #333; /* Borde más oscuro */
+    padding: 15px; /* Espaciado interno para hacerlo más grande */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    font-family: Open Sans, sans-serif;
+    font-weight: bold; /* Hacer el texto en negrita */
+    width: 450px;
+
+    /* Añade más propiedades de estilo según tus preferencias */
+}
+
+#monto, #resultado {
+    background-color: #f8f8f8; /* Color de fondo más claro */
+    color: black; /* Color del texto */
+    border: 1px solid #333; /* Borde más oscuro */
+    padding: 15px; /* Espaciado interno para hacerlo más grande */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    font-family: Open Sans, sans-serif;
+    font-weight: bold; /* Hacer el texto en negrita */
+    width: 450px;
+}
+
+#convertir {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#convertir:hover {
+    background-color: darkgreen;
+}
+
+#imagen-moneda-origen {
+    width: 1500px; /* o el tamaño que prefieras */
+    height: auto;
+    margin-right: 15px; /* Espacio entre la imagen y el selector */
+}
+
+#imagen-moneda-destino {
+    width: 1500px; /* o el tamaño que prefieras */
+    height: auto;
+    margin-right: 15px; /* Espacio entre la imagen y el selector */
+}
+
+.formulario {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.terminos-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.terminos-container input[type="checkbox"] {
+    margin-right: 5px;
+}
